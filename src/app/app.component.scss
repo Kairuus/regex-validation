@@ -1,0 +1,137 @@
+.back{
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/background.jpg');
+  background-size: cover;
+}
+
+.container{
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  background-color: rgba(255,255,255, 0.7);
+  h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a{
+    font-size: 30px;
+    color: #B60D0D;
+  }
+}
+
+.register-div{
+  background: white;
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input-div{
+
+  label{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  input{
+    width: 80%;
+    height: 26px;
+    font-size: 16px;
+    outline: 0;
+    padding: 1px 3px;
+
+    &:focus{
+      border: 2px solid #B60D0D;
+    }
+  }
+}
+
+.error-div{
+  margin-top: 6px;
+  height: 20px;
+
+  p{
+    color: red;
+  }
+}
+
+.requirements-div{
+  margin: 20px 0;
+
+  p{
+    margin: 10px 0;
+  }
+}
+
+#submitBtn{
+  height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  outline: 0;
+  background-color: #B60D0D;
+  border: 2px solid black;
+  cursor: pointer;
+  color: white;
+
+  &:active{
+    transform: translateY(1px);
+  }
+
+  &:disabled{
+    background-color: #ccc;
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+  header{
+    width: 60%;
+
+    h1{
+      font-size: 40px;
+    }
+
+  }
+
+  .links{
+    a{
+      font-size: 50px;
+    }
+  }
+
+  .container{
+    height: 70vh;
+  }
+
+  .register-div{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 84em) {
+
+  .register-div{
+    width: 30%;
+  }
+
+}
